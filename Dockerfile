@@ -16,3 +16,6 @@ RUN curl -o actions-runner-linux-x64-2.294.0.tar.gz -L https://github.com/action
 
 RUN tar xzf ./actions-runner-linux-x64-2.294.0.tar.gz && sudo ./bin/installdependencies.sh
 
+RUN ./config.sh
+
+CMD [./run.sh]
